@@ -1,7 +1,13 @@
 # Introduction
 This repository contains the implementation and evaluation artifacts for the REFSQ 2023 submission titled "Using Language Models for Enhancing the Completeness of Natural-language Requirements", authored by Dipeeka Luitel, Shabnam Hassani and Mehrdad Sabetzadeh.
 
+International Working Conference on Requirements Engineering: Foundation for Software Quality (REFSQ 2023), pages 87-104. [Paper (DOI)](https://doi.org/10.1007/978-3-031-29786-1_7) · [arXiv](https://arxiv.org/abs/2302.04792)
 
+## Overview
+
+![Overview of the BERT-based completeness checking approach](figure.png)
+
+Fig. 2 from the paper: approach overview.
 
 # Prerequisites
 - Python 3.8
@@ -24,3 +30,17 @@ The following steps explain how to use this repository to utilize BERT's MLM for
 5. Select "Re-evaluate model on current test set".
 6. Copy output of "Predictions on user test set" into new CSV file.
 7. Predictions marked True correspond to relevant predictions in the raw predictions file (Step 1 above). These predictions, after duplicate removal, constitute the final reccommendations made to the user.
+
+## Citation
+
+```bibtex
+@inproceedings{Luitel_2023,
+  title     = {Using Language Models for Enhancing the Completeness of Natural-Language Requirements},
+  author    = {Luitel, Dipeeka and Hassani, Shabnam and Sabetzadeh, Mehrdad},
+  booktitle = {Requirements Engineering: Foundation for Software Quality},
+  pages     = {87--104},
+  year      = {2023},
+  publisher = {Springer Nature Switzerland},
+  doi       = {10.1007/978-3-031-29786-1_7}
+}
+```
